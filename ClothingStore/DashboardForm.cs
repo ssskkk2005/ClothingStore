@@ -7,7 +7,7 @@ public partial class DashboardForm : Form
         InitializeComponent();
     }
 
-    // ---------- Sidebar navigation (TODO: open each form later) ----------
+
     private void btnDashboard_Click(object sender, EventArgs e) { }
     private void btnProducts_Click(object sender, EventArgs e) { }
     private void btnSizesColors_Click(object sender, EventArgs e) { }
@@ -15,6 +15,6 @@ public partial class DashboardForm : Form
     private void btnReports_Click(object sender, EventArgs e) { }
     private void btnSales_Click(object sender, EventArgs e) { }
 
-    // ---------- Sign out (TODO: go back to Login) ----------
+ 
     private void btnSignOut_Click(object sender, EventArgs e) { }
 }

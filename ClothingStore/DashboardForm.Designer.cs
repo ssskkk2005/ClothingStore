@@ -72,9 +72,7 @@ namespace ClothingStoreManager
             flpCards.SuspendLayout();
             pnlHeader.SuspendLayout();
             SuspendLayout();
-            //
-            // pnlSidebar
-            //
+ 
             pnlSidebar.BackColor = Color.Gray;
             pnlSidebar.Controls.Add(btnSales);
             pnlSidebar.Controls.Add(btnReports);
@@ -86,39 +84,25 @@ namespace ClothingStoreManager
             pnlSidebar.Name = "pnlSidebar";
             pnlSidebar.Size = new Size(178, 720);
             pnlSidebar.TabIndex = 1;
-            //
-            // btnDashboard
-            //
+
             StyleSidebarButton(btnDashboard, "btnDashboard", "Dashboard", 195, 45);
             btnDashboard.Click += btnDashboard_Click;
-            //
-            // btnProducts
-            //
+
             StyleSidebarButton(btnProducts, "btnProducts", "Products", 260, 45);
             btnProducts.Click += btnProducts_Click;
-            //
-            // btnSizesColors
-            //
+
             StyleSidebarButton(btnSizesColors, "btnSizesColors", "Management Sizes _Colors", 325, 45);
             btnSizesColors.Click += btnSizesColors_Click;
-            //
-            // btnInventory
-            //
+
             StyleSidebarButton(btnInventory, "btnInventory", "Inventory", 404, 45);
             btnInventory.Click += btnInventory_Click;
-            //
-            // btnReports
-            //
+
             StyleSidebarButton(btnReports, "btnReports", "Management Reports", 475, 45);
             btnReports.Click += btnReports_Click;
-            //
-            // btnSales
-            //
+          
             StyleSidebarButton(btnSales, "btnSales", "Management Sales", 545, 45);
             btnSales.Click += btnSales_Click;
-            //
-            // pnlMain
-            //
+          
             pnlMain.BackColor = Color.FromArgb(240, 240, 240);
             pnlMain.Controls.Add(dgvLowStock);
             pnlMain.Controls.Add(lblLowStock);
@@ -129,9 +113,7 @@ namespace ClothingStoreManager
             pnlMain.Dock = DockStyle.Fill;
             pnlMain.Name = "pnlMain";
             pnlMain.TabIndex = 0;
-            //
-            // pnlHeader
-            //
+
             pnlHeader.BackColor = Color.Gray;
             pnlHeader.Controls.Add(lblWelcome);
             pnlHeader.Controls.Add(btnSignOut);
@@ -139,17 +121,13 @@ namespace ClothingStoreManager
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Size = new Size(1102, 100);
             pnlHeader.TabIndex = 0;
-            //
-            // lblWelcome
-            //
+ 
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Century Gothic", 30F, FontStyle.Bold);
             lblWelcome.Location = new Point(8, 0);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Text = "Welcome to Clothing Management System";
-            //
-            // btnSignOut
-            //
+
             btnSignOut.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnSignOut.BackColor = Color.White;
             btnSignOut.Cursor = Cursors.Hand;
@@ -161,9 +139,7 @@ namespace ClothingStoreManager
             btnSignOut.Text = "Sign Out";
             btnSignOut.UseVisualStyleBackColor = false;
             btnSignOut.Click += btnSignOut_Click;
-            //
-            // flpCards
-            //
+
             flpCards.BackColor = Color.FromArgb(240, 240, 240);
             flpCards.Controls.Add(pnlCardProducts);
             flpCards.Controls.Add(pnlCardVariants);
@@ -176,9 +152,7 @@ namespace ClothingStoreManager
             flpCards.Name = "flpCards";
             flpCards.Size = new Size(1102, 176);
             flpCards.TabIndex = 1;
-            //
-            // Cards (title top-left, value label below it - value left empty for the backend)
-            //
+
             StyleCard(pnlCardProducts, lblProductsTitle, lblProductsValue,
                 "pnlCardProducts", "lblProductsTitle", "lblProductsValue", "Products", Color.FromArgb(128, 64, 0));
             StyleCard(pnlCardVariants, lblVariantsTitle, lblVariantsValue,
@@ -193,20 +167,14 @@ namespace ClothingStoreManager
                 "pnlCardTodayRevenue", "lblTodayRevenueTitle", "lblTodayRevenueValue", "Today's revenue", Color.Olive);
             StyleCard(pnlCardTotalRevenue, lblTotalRevenueTitle, lblTotalRevenueValue,
                 "pnlCardTotalRevenue", "lblTotalRevenueTitle", "lblTotalRevenueValue", "Total revenue", Color.FromArgb(192, 0, 192));
-            //
-            // lblRecentSales
-            //
+ 
             StyleSectionLabel(lblRecentSales, "lblRecentSales", "Recent Sales");
-            //
-            // dgvRecentSales
-            //
+
             StyleGrid(dgvRecentSales, "dgvRecentSales");
             dgvRecentSales.Columns.AddRange(new DataGridViewColumn[] { colRsId, colRsDate, colRsCashier, colRsDiscount, colRsTotal });
             dgvRecentSales.Dock = DockStyle.Top;
             dgvRecentSales.Size = new Size(1102, 215);
-            //
-            // colRsId .. colRsTotal
-            //
+
             colRsId.HeaderText = "ID";
             colRsId.Name = "colRsId";
             colRsDate.HeaderText = "DATE";
@@ -217,19 +185,13 @@ namespace ClothingStoreManager
             colRsDiscount.Name = "colRsDiscount";
             colRsTotal.HeaderText = "Total";
             colRsTotal.Name = "colRsTotal";
-            //
-            // lblLowStock
-            //
+
             StyleSectionLabel(lblLowStock, "lblLowStock", "Low Stock alerts");
-            //
-            // dgvLowStock
-            //
+
             StyleGrid(dgvLowStock, "dgvLowStock");
             dgvLowStock.Columns.AddRange(new DataGridViewColumn[] { colLsProduct, colLsSize, colLsColor, colLsQuantity, colLsReorderLevel });
             dgvLowStock.Dock = DockStyle.Fill;
-            //
-            // colLsProduct .. colLsReorderLevel
-            //
+
             colLsProduct.HeaderText = "Product";
             colLsProduct.Name = "colLsProduct";
             colLsSize.HeaderText = "Size";
@@ -240,9 +202,7 @@ namespace ClothingStoreManager
             colLsQuantity.Name = "colLsQuantity";
             colLsReorderLevel.HeaderText = "ReorderLevel";
             colLsReorderLevel.Name = "colLsReorderLevel";
-            //
-            // DashboardForm
-            //
+
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1280, 720);
@@ -262,7 +222,7 @@ namespace ClothingStoreManager
             ResumeLayout(false);
         }
 
-        // Small styling helpers so the designer code above stays short.
+ 
         private void StyleSidebarButton(Button b, string name, string text, int top, int height)
         {
             b.BackColor = Color.White;
@@ -285,13 +245,13 @@ namespace ClothingStoreManager
             card.Controls.Add(title);
             card.Name = cardName;
             card.Size = new Size(210, 78);
-            //
+     
             title.AutoSize = true;
             title.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             title.Location = new Point(4, 3);
             title.Name = titleName;
             title.Text = titleText;
-            //
+         
             value.Font = new Font("Century Gothic", 18F, FontStyle.Bold);
             value.Location = new Point(4, 28);
             value.Name = valueName;
