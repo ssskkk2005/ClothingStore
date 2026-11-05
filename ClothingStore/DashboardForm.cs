@@ -1,20 +1,27 @@
-namespace ClothingStoreManager;
-
-public partial class DashboardForm : Form
+namespace clothingstore
 {
-    public DashboardForm()
+    public partial class Form1 : Form
     {
-        InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+
+            Dashboard1.Click += Dashboard1_Click;
+            Products2.Click += Products2_Click;
+            ManagementSizesColors3.Click += ManagementSizesColors3_Click;
+            Inventory4.Click += Inventory4_Click;
+            ManagementReports5.Click += ManagementReports5_Click;
+            ManagementSales6.Click += ManagementSales6_Click;
+            SignOut7.Click += SignOut7_Click;
+        }
+
+        private void Dashboard1_Click(object? sender, EventArgs e) { }
+        private void Products2_Click(object? sender, EventArgs e) { }
+        private void ManagementSizesColors3_Click(object? sender, EventArgs e) { }
+        private void Inventory4_Click(object? sender, EventArgs e) { }
+        private void ManagementReports5_Click(object? sender, EventArgs e) { }
+        private void ManagementSales6_Click(object? sender, EventArgs e) { }
+
+        private void SignOut7_Click(object? sender, EventArgs e) { }
     }
-
-
-    private void btnDashboard_Click(object sender, EventArgs e) { }
-    private void btnProducts_Click(object sender, EventArgs e) { }
-    private void btnSizesColors_Click(object sender, EventArgs e) { }
-    private void btnInventory_Click(object sender, EventArgs e) { }
-    private void btnReports_Click(object sender, EventArgs e) { }
-    private void btnSales_Click(object sender, EventArgs e) { }
-
- 
-    private void btnSignOut_Click(object sender, EventArgs e) { }
 }

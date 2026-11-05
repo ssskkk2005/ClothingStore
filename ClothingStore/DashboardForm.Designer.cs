@@ -1,7 +1,6 @@
-#nullable disable
-namespace ClothingStoreManager
+﻿namespace clothingstore
 {
-    partial class DashboardForm
+    partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -18,326 +17,459 @@ namespace ClothingStoreManager
 
         private void InitializeComponent()
         {
-            pnlSidebar = new Panel();
-            btnDashboard = new Button();
-            btnProducts = new Button();
-            btnSizesColors = new Button();
-            btnInventory = new Button();
-            btnReports = new Button();
-            btnSales = new Button();
-            pnlMain = new Panel();
-            dgvLowStock = new DataGridView();
-            colLsProduct = new DataGridViewTextBoxColumn();
-            colLsSize = new DataGridViewTextBoxColumn();
-            colLsColor = new DataGridViewTextBoxColumn();
-            colLsQuantity = new DataGridViewTextBoxColumn();
-            colLsReorderLevel = new DataGridViewTextBoxColumn();
-            lblLowStock = new Label();
-            dgvRecentSales = new DataGridView();
-            colRsId = new DataGridViewTextBoxColumn();
-            colRsDate = new DataGridViewTextBoxColumn();
-            colRsCashier = new DataGridViewTextBoxColumn();
-            colRsDiscount = new DataGridViewTextBoxColumn();
-            colRsTotal = new DataGridViewTextBoxColumn();
-            lblRecentSales = new Label();
-            flpCards = new FlowLayoutPanel();
-            pnlCardProducts = new Panel();
-            lblProductsTitle = new Label();
-            lblProductsValue = new Label();
-            pnlCardVariants = new Panel();
-            lblVariantsTitle = new Label();
-            lblVariantsValue = new Label();
-            pnlCardUnits = new Panel();
-            lblUnitsTitle = new Label();
-            lblUnitsValue = new Label();
-            pnlCardLowStock = new Panel();
-            lblLowStockItemsTitle = new Label();
-            lblLowStockItemsValue = new Label();
-            pnlCardTodaySales = new Panel();
-            lblTodaySalesTitle = new Label();
-            lblTodaySalesValue = new Label();
-            pnlCardTodayRevenue = new Panel();
-            lblTodayRevenueTitle = new Label();
-            lblTodayRevenueValue = new Label();
-            pnlCardTotalRevenue = new Panel();
-            lblTotalRevenueTitle = new Label();
-            lblTotalRevenueValue = new Label();
-            pnlHeader = new Panel();
-            lblWelcome = new Label();
-            btnSignOut = new Button();
-            pnlSidebar.SuspendLayout();
-            pnlMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvLowStock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvRecentSales).BeginInit();
-            flpCards.SuspendLayout();
-            pnlHeader.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            panel1 = new Panel();
+            ManagementSales6 = new Button();
+            ManagementReports5 = new Button();
+            Inventory4 = new Button();
+            ManagementSizesColors3 = new Button();
+            Products2 = new Button();
+            Dashboard1 = new Button();
+            panel2 = new Panel();
+            SignOut7 = new Button();
+            labelwelcometoclothing1 = new Label();
+            imageList1 = new ImageList(components);
+            LowStockalert1 = new DataGridView();
+            colProduct = new DataGridViewTextBoxColumn();
+            colSize = new DataGridViewTextBoxColumn();
+            colColor = new DataGridViewTextBoxColumn();
+            colQuantity = new DataGridViewTextBoxColumn();
+            colReorderLevel = new DataGridViewTextBoxColumn();
+            recentsales2 = new DataGridView();
+            colID = new DataGridViewTextBoxColumn();
+            colDate = new DataGridViewTextBoxColumn();
+            colCashier = new DataGridViewTextBoxColumn();
+            colDiscount = new DataGridViewTextBoxColumn();
+            colTotal = new DataGridViewTextBoxColumn();
+            labelrecentsales2 = new Label();
+            lablowstockalerts3 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            productsPanel2 = new FlowLayoutPanel();
+            label4 = new Label();
+            label6 = new Label();
+            sizecolorpanel3 = new Panel();
+            label5 = new Label();
+            unitsinstockpanel4 = new Panel();
+            label9 = new Label();
+            lowstockitemspanel5 = new Panel();
+            label10 = new Label();
+            todayssalespanel6 = new Panel();
+            label11 = new Label();
+            todaysrevenuepanel7 = new Panel();
+            label7 = new Label();
+            totalrevenuepanel8 = new Panel();
+            label12 = new Label();
+            label8 = new Label();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)LowStockalert1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)recentsales2).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            productsPanel2.SuspendLayout();
+            sizecolorpanel3.SuspendLayout();
+            unitsinstockpanel4.SuspendLayout();
+            lowstockitemspanel5.SuspendLayout();
+            todayssalespanel6.SuspendLayout();
+            todaysrevenuepanel7.SuspendLayout();
+            totalrevenuepanel8.SuspendLayout();
             SuspendLayout();
- 
-            pnlSidebar.BackColor = Color.Gray;
-            pnlSidebar.Controls.Add(btnSales);
-            pnlSidebar.Controls.Add(btnReports);
-            pnlSidebar.Controls.Add(btnInventory);
-            pnlSidebar.Controls.Add(btnSizesColors);
-            pnlSidebar.Controls.Add(btnProducts);
-            pnlSidebar.Controls.Add(btnDashboard);
-            pnlSidebar.Dock = DockStyle.Left;
-            pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(178, 720);
-            pnlSidebar.TabIndex = 1;
-
-            StyleSidebarButton(btnDashboard, "btnDashboard", "Dashboard", 195, 45);
-            btnDashboard.Click += btnDashboard_Click;
-
-            StyleSidebarButton(btnProducts, "btnProducts", "Products", 260, 45);
-            btnProducts.Click += btnProducts_Click;
-
-            StyleSidebarButton(btnSizesColors, "btnSizesColors", "Management Sizes _Colors", 325, 45);
-            btnSizesColors.Click += btnSizesColors_Click;
-
-            StyleSidebarButton(btnInventory, "btnInventory", "Inventory", 404, 45);
-            btnInventory.Click += btnInventory_Click;
-
-            StyleSidebarButton(btnReports, "btnReports", "Management Reports", 475, 45);
-            btnReports.Click += btnReports_Click;
-          
-            StyleSidebarButton(btnSales, "btnSales", "Management Sales", 545, 45);
-            btnSales.Click += btnSales_Click;
-          
-            pnlMain.BackColor = Color.FromArgb(240, 240, 240);
-            pnlMain.Controls.Add(dgvLowStock);
-            pnlMain.Controls.Add(lblLowStock);
-            pnlMain.Controls.Add(dgvRecentSales);
-            pnlMain.Controls.Add(lblRecentSales);
-            pnlMain.Controls.Add(flpCards);
-            pnlMain.Controls.Add(pnlHeader);
-            pnlMain.Dock = DockStyle.Fill;
-            pnlMain.Name = "pnlMain";
-            pnlMain.TabIndex = 0;
-
-            pnlHeader.BackColor = Color.Gray;
-            pnlHeader.Controls.Add(lblWelcome);
-            pnlHeader.Controls.Add(btnSignOut);
-            pnlHeader.Dock = DockStyle.Top;
-            pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1102, 100);
-            pnlHeader.TabIndex = 0;
- 
-            lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Century Gothic", 30F, FontStyle.Bold);
-            lblWelcome.Location = new Point(8, 0);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Text = "Welcome to Clothing Management System";
-
-            btnSignOut.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnSignOut.BackColor = Color.White;
-            btnSignOut.Cursor = Cursors.Hand;
-            btnSignOut.FlatStyle = FlatStyle.Flat;
-            btnSignOut.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            btnSignOut.Location = new Point(960, 20);
-            btnSignOut.Name = "btnSignOut";
-            btnSignOut.Size = new Size(140, 50);
-            btnSignOut.Text = "Sign Out";
-            btnSignOut.UseVisualStyleBackColor = false;
-            btnSignOut.Click += btnSignOut_Click;
-
-            flpCards.BackColor = Color.FromArgb(240, 240, 240);
-            flpCards.Controls.Add(pnlCardProducts);
-            flpCards.Controls.Add(pnlCardVariants);
-            flpCards.Controls.Add(pnlCardUnits);
-            flpCards.Controls.Add(pnlCardLowStock);
-            flpCards.Controls.Add(pnlCardTodaySales);
-            flpCards.Controls.Add(pnlCardTodayRevenue);
-            flpCards.Controls.Add(pnlCardTotalRevenue);
-            flpCards.Dock = DockStyle.Top;
-            flpCards.Name = "flpCards";
-            flpCards.Size = new Size(1102, 176);
-            flpCards.TabIndex = 1;
-
-            StyleCard(pnlCardProducts, lblProductsTitle, lblProductsValue,
-                "pnlCardProducts", "lblProductsTitle", "lblProductsValue", "Products", Color.FromArgb(128, 64, 0));
-            StyleCard(pnlCardVariants, lblVariantsTitle, lblVariantsValue,
-                "pnlCardVariants", "lblVariantsTitle", "lblVariantsValue", "Size / color variants", Color.ForestGreen);
-            StyleCard(pnlCardUnits, lblUnitsTitle, lblUnitsValue,
-                "pnlCardUnits", "lblUnitsTitle", "lblUnitsValue", "Units in stock", Color.FromArgb(192, 0, 0));
-            StyleCard(pnlCardLowStock, lblLowStockItemsTitle, lblLowStockItemsValue,
-                "pnlCardLowStock", "lblLowStockItemsTitle", "lblLowStockItemsValue", "Low stock items", Color.Teal);
-            StyleCard(pnlCardTodaySales, lblTodaySalesTitle, lblTodaySalesValue,
-                "pnlCardTodaySales", "lblTodaySalesTitle", "lblTodaySalesValue", "Today's sales", Color.CornflowerBlue);
-            StyleCard(pnlCardTodayRevenue, lblTodayRevenueTitle, lblTodayRevenueValue,
-                "pnlCardTodayRevenue", "lblTodayRevenueTitle", "lblTodayRevenueValue", "Today's revenue", Color.Olive);
-            StyleCard(pnlCardTotalRevenue, lblTotalRevenueTitle, lblTotalRevenueValue,
-                "pnlCardTotalRevenue", "lblTotalRevenueTitle", "lblTotalRevenueValue", "Total revenue", Color.FromArgb(192, 0, 192));
- 
-            StyleSectionLabel(lblRecentSales, "lblRecentSales", "Recent Sales");
-
-            StyleGrid(dgvRecentSales, "dgvRecentSales");
-            dgvRecentSales.Columns.AddRange(new DataGridViewColumn[] { colRsId, colRsDate, colRsCashier, colRsDiscount, colRsTotal });
-            dgvRecentSales.Dock = DockStyle.Top;
-            dgvRecentSales.Size = new Size(1102, 215);
-
-            colRsId.HeaderText = "ID";
-            colRsId.Name = "colRsId";
-            colRsDate.HeaderText = "DATE";
-            colRsDate.Name = "colRsDate";
-            colRsCashier.HeaderText = "cashier";
-            colRsCashier.Name = "colRsCashier";
-            colRsDiscount.HeaderText = "Discount";
-            colRsDiscount.Name = "colRsDiscount";
-            colRsTotal.HeaderText = "Total";
-            colRsTotal.Name = "colRsTotal";
-
-            StyleSectionLabel(lblLowStock, "lblLowStock", "Low Stock alerts");
-
-            StyleGrid(dgvLowStock, "dgvLowStock");
-            dgvLowStock.Columns.AddRange(new DataGridViewColumn[] { colLsProduct, colLsSize, colLsColor, colLsQuantity, colLsReorderLevel });
-            dgvLowStock.Dock = DockStyle.Fill;
-
-            colLsProduct.HeaderText = "Product";
-            colLsProduct.Name = "colLsProduct";
-            colLsSize.HeaderText = "Size";
-            colLsSize.Name = "colLsSize";
-            colLsColor.HeaderText = "Color";
-            colLsColor.Name = "colLsColor";
-            colLsQuantity.HeaderText = "Quantity";
-            colLsQuantity.Name = "colLsQuantity";
-            colLsReorderLevel.HeaderText = "ReorderLevel";
-            colLsReorderLevel.Name = "colLsReorderLevel";
-
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1280, 720);
-            Controls.Add(pnlMain);
-            Controls.Add(pnlSidebar);
-            MinimumSize = new Size(1100, 650);
-            Name = "DashboardForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Clothing Management System - Dashboard";
-            pnlSidebar.ResumeLayout(false);
-            pnlMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvLowStock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvRecentSales).EndInit();
-            flpCards.ResumeLayout(false);
-            pnlHeader.ResumeLayout(false);
-            pnlHeader.PerformLayout();
-            ResumeLayout(false);
-        }
-
- 
-        private void StyleSidebarButton(Button b, string name, string text, int top, int height)
-        {
-            b.BackColor = Color.White;
-            b.Cursor = Cursors.Hand;
-            b.FlatAppearance.BorderColor = Color.Silver;
-            b.FlatStyle = FlatStyle.Flat;
-            b.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            b.Location = new Point(10, top);
-            b.Name = name;
-            b.Size = new Size(160, height);
-            b.Text = text;
-            b.UseVisualStyleBackColor = false;
-        }
-
-        private void StyleCard(Panel card, Label title, Label value,
-            string cardName, string titleName, string valueName, string titleText, Color color)
-        {
-            card.BackColor = color;
-            card.Controls.Add(value);
-            card.Controls.Add(title);
-            card.Name = cardName;
-            card.Size = new Size(210, 78);
+           
+            panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(ManagementSales6);
+            panel1.Controls.Add(ManagementReports5);
+            panel1.Controls.Add(Inventory4);
+            panel1.Controls.Add(ManagementSizesColors3);
+            panel1.Controls.Add(Products2);
+            panel1.Controls.Add(Dashboard1);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(179, 700);
+            panel1.TabIndex = 0;
      
-            title.AutoSize = true;
-            title.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            title.Location = new Point(4, 3);
-            title.Name = titleName;
-            title.Text = titleText;
-         
-            value.Font = new Font("Century Gothic", 18F, FontStyle.Bold);
-            value.Location = new Point(4, 28);
-            value.Name = valueName;
-            value.Size = new Size(200, 44);
-        }
+            ManagementSales6.FlatStyle = FlatStyle.System;
+            ManagementSales6.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ManagementSales6.Location = new Point(12, 543);
+            ManagementSales6.Name = "ManagementSales6";
+            ManagementSales6.Size = new Size(161, 50);
+            ManagementSales6.TabIndex = 5;
+            ManagementSales6.Text = "Management Sales";
+            ManagementSales6.UseVisualStyleBackColor = true;
+      
+            ManagementReports5.FlatStyle = FlatStyle.System;
+            ManagementReports5.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ManagementReports5.Location = new Point(12, 475);
+            ManagementReports5.Name = "ManagementReports5";
+            ManagementReports5.Size = new Size(161, 46);
+            ManagementReports5.TabIndex = 4;
+            ManagementReports5.Text = "Management Reports";
+            ManagementReports5.UseVisualStyleBackColor = true;
+    
+            Inventory4.FlatStyle = FlatStyle.System;
+            Inventory4.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Inventory4.Location = new Point(12, 404);
+            Inventory4.Name = "Inventory4";
+            Inventory4.Size = new Size(161, 43);
+            Inventory4.TabIndex = 3;
+            Inventory4.Text = "Inventory";
+            Inventory4.UseVisualStyleBackColor = true;
 
-        private void StyleSectionLabel(Label l, string name, string text)
-        {
-            l.BackColor = Color.FromArgb(240, 240, 240);
-            l.Dock = DockStyle.Top;
-            l.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
-            l.Name = name;
-            l.Padding = new Padding(6, 0, 0, 0);
-            l.Size = new Size(1102, 26);
-            l.Text = text;
-            l.TextAlign = ContentAlignment.MiddleLeft;
-        }
+            ManagementSizesColors3.FlatStyle = FlatStyle.System;
+            ManagementSizesColors3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ManagementSizesColors3.Location = new Point(12, 326);
+            ManagementSizesColors3.Name = "ManagementSizesColors3";
+            ManagementSizesColors3.Size = new Size(161, 46);
+            ManagementSizesColors3.TabIndex = 2;
+            ManagementSizesColors3.Text = "Management Sizes & Colors";
+            ManagementSizesColors3.UseVisualStyleBackColor = true;
+  
+            Products2.BackColor = Color.FromArgb(255, 255, 192);
+            Products2.FlatStyle = FlatStyle.System;
+            Products2.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Products2.Location = new Point(12, 260);
+            Products2.Name = "Products2";
+            Products2.Size = new Size(161, 48);
+            Products2.TabIndex = 1;
+            Products2.Text = "Products";
+            Products2.UseVisualStyleBackColor = false;
 
-        private void StyleGrid(DataGridView g, string name)
-        {
-            g.AllowUserToAddRows = false;
-            g.AllowUserToDeleteRows = false;
-            g.AllowUserToResizeRows = false;
-            g.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            g.BackgroundColor = Color.FromArgb(160, 160, 160);
-            g.BorderStyle = BorderStyle.None;
-            g.EnableHeadersVisualStyles = false;
-            g.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
-            g.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-            g.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White;
-            g.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
-            g.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            g.Name = name;
-            g.ReadOnly = true;
-            g.RowHeadersVisible = false;
-            g.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Dashboard1.BackColor = Color.Silver;
+            Dashboard1.FlatStyle = FlatStyle.System;
+            Dashboard1.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Dashboard1.Location = new Point(12, 195);
+            Dashboard1.Name = "Dashboard1";
+            Dashboard1.Size = new Size(161, 43);
+            Dashboard1.TabIndex = 0;
+            Dashboard1.Text = "Dashboard";
+            Dashboard1.UseVisualStyleBackColor = false;
+
+            panel2.BackColor = Color.Gray;
+            panel2.Controls.Add(SignOut7);
+            panel2.Controls.Add(labelwelcometoclothing1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(179, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1253, 100);
+            panel2.TabIndex = 1;
+
+            SignOut7.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SignOut7.Location = new Point(1082, 22);
+            SignOut7.Name = "SignOut7";
+            SignOut7.Size = new Size(142, 49);
+            SignOut7.TabIndex = 1;
+            SignOut7.Tag = "SignOut7_Click";
+            SignOut7.Text = "Sign Out";
+            SignOut7.UseVisualStyleBackColor = true;
+
+            labelwelcometoclothing1.AutoSize = true;
+            labelwelcometoclothing1.Font = new Font("Century Gothic", 25.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelwelcometoclothing1.Location = new Point(0, 0);
+            labelwelcometoclothing1.Name = "labelwelcometoclothing1";
+            labelwelcometoclothing1.Size = new Size(918, 49);
+            labelwelcometoclothing1.TabIndex = 0;
+            labelwelcometoclothing1.Text = "Welcome to Clothing Management System";
+ 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+
+            LowStockalert1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            LowStockalert1.Columns.AddRange(new DataGridViewColumn[] { colProduct, colSize, colColor, colQuantity, colReorderLevel });
+            LowStockalert1.Location = new Point(179, 512);
+            LowStockalert1.Name = "LowStockalert1";
+            LowStockalert1.RowHeadersWidth = 51;
+            LowStockalert1.Size = new Size(1253, 188);
+            LowStockalert1.TabIndex = 2;
+
+            colProduct.HeaderText = "Product";
+            colProduct.MinimumWidth = 6;
+            colProduct.Name = "colProduct";
+            colProduct.Width = 250;
+ 
+            colSize.HeaderText = "Size";
+            colSize.MinimumWidth = 6;
+            colSize.Name = "colSize";
+            colSize.Width = 250;
+  
+            colColor.HeaderText = "Color";
+            colColor.MinimumWidth = 6;
+            colColor.Name = "colColor";
+            colColor.Width = 250;
+
+            colQuantity.HeaderText = "Quantity";
+            colQuantity.MinimumWidth = 6;
+            colQuantity.Name = "colQuantity";
+            colQuantity.Width = 250;
+
+            colReorderLevel.HeaderText = "ReorderLevel";
+            colReorderLevel.MinimumWidth = 6;
+            colReorderLevel.Name = "colReorderLevel";
+            colReorderLevel.Width = 250;
+
+            recentsales2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            recentsales2.Columns.AddRange(new DataGridViewColumn[] { colID, colDate, colCashier, colDiscount, colTotal });
+            recentsales2.Location = new Point(179, 299);
+            recentsales2.Name = "recentsales2";
+            recentsales2.RowHeadersWidth = 51;
+            recentsales2.Size = new Size(1253, 188);
+            recentsales2.TabIndex = 3;
+    
+            colID.HeaderText = "ID";
+            colID.MinimumWidth = 6;
+            colID.Name = "colID";
+            colID.Width = 200;
+  
+            colDate.HeaderText = "DATE";
+            colDate.MinimumWidth = 6;
+            colDate.Name = "colDate";
+            colDate.Width = 250;
+   
+            colCashier.HeaderText = "cashier";
+            colCashier.MinimumWidth = 6;
+            colCashier.Name = "colCashier";
+            colCashier.Width = 250;
+   
+            colDiscount.HeaderText = "Discount";
+            colDiscount.MinimumWidth = 6;
+            colDiscount.Name = "colDiscount";
+            colDiscount.Width = 250;
+ 
+            colTotal.HeaderText = "Total";
+            colTotal.MinimumWidth = 6;
+            colTotal.Name = "colTotal";
+            colTotal.Width = 250;
+
+            labelrecentsales2.AutoSize = true;
+            labelrecentsales2.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelrecentsales2.Location = new Point(185, 276);
+            labelrecentsales2.Name = "labelrecentsales2";
+            labelrecentsales2.Size = new Size(89, 16);
+            labelrecentsales2.TabIndex = 4;
+            labelrecentsales2.Text = "Recent Sales";
+  
+            lablowstockalerts3.AutoSize = true;
+            lablowstockalerts3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lablowstockalerts3.Location = new Point(185, 490);
+            lablowstockalerts3.Name = "lablowstockalerts3";
+            lablowstockalerts3.Size = new Size(110, 16);
+            lablowstockalerts3.TabIndex = 5;
+            lablowstockalerts3.Text = "Low Stock alerts";
+
+            flowLayoutPanel1.Controls.Add(productsPanel2);
+            flowLayoutPanel1.Controls.Add(sizecolorpanel3);
+            flowLayoutPanel1.Controls.Add(unitsinstockpanel4);
+            flowLayoutPanel1.Controls.Add(lowstockitemspanel5);
+            flowLayoutPanel1.Controls.Add(todayssalespanel6);
+            flowLayoutPanel1.Controls.Add(todaysrevenuepanel7);
+            flowLayoutPanel1.Controls.Add(totalrevenuepanel8);
+            flowLayoutPanel1.Location = new Point(179, 100);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1253, 173);
+            flowLayoutPanel1.TabIndex = 6;
+  
+            productsPanel2.BackColor = Color.FromArgb(128, 64, 0);
+            productsPanel2.Controls.Add(label4);
+            productsPanel2.Controls.Add(label6);
+            productsPanel2.Location = new Point(3, 3);
+            productsPanel2.Name = "productsPanel2";
+            productsPanel2.Size = new Size(210, 77);
+            productsPanel2.TabIndex = 0;
+            label4.AutoSize = true;
+            label4.Location = new Point(3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 17);
+            label4.TabIndex = 0;
+          
+            label6.AutoSize = true;
+            label6.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(9, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 16);
+            label6.TabIndex = 1;
+            label6.Text = "Products";
+   
+            sizecolorpanel3.BackColor = Color.ForestGreen;
+            sizecolorpanel3.Controls.Add(label5);
+            sizecolorpanel3.Location = new Point(219, 3);
+            sizecolorpanel3.Name = "sizecolorpanel3";
+            sizecolorpanel3.Size = new Size(214, 77);
+            sizecolorpanel3.TabIndex = 0;
+      
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(0, 1);
+            label5.Name = "label5";
+            label5.Size = new Size(135, 16);
+            label5.TabIndex = 0;
+            label5.Text = "Size / color variants";
+
+            unitsinstockpanel4.BackColor = Color.FromArgb(192, 0, 0);
+            unitsinstockpanel4.Controls.Add(label9);
+            unitsinstockpanel4.Location = new Point(439, 3);
+            unitsinstockpanel4.Name = "unitsinstockpanel4";
+            unitsinstockpanel4.Size = new Size(214, 77);
+            unitsinstockpanel4.TabIndex = 1;
+   
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.ActiveCaptionText;
+            label9.Location = new Point(3, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(91, 16);
+            label9.TabIndex = 0;
+            label9.Text = "Units in stock";
+    
+            lowstockitemspanel5.BackColor = Color.Teal;
+            lowstockitemspanel5.Controls.Add(label10);
+            lowstockitemspanel5.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lowstockitemspanel5.Location = new Point(659, 3);
+            lowstockitemspanel5.Name = "lowstockitemspanel5";
+            lowstockitemspanel5.Size = new Size(214, 77);
+            lowstockitemspanel5.TabIndex = 2;
+      
+            label10.AutoSize = true;
+            label10.Location = new Point(3, 1);
+            label10.Name = "label10";
+            label10.Size = new Size(107, 16);
+            label10.TabIndex = 0;
+            label10.Text = "Low stock items";
+  
+            todayssalespanel6.BackColor = Color.CornflowerBlue;
+            todayssalespanel6.Controls.Add(label11);
+            todayssalespanel6.Location = new Point(879, 3);
+            todayssalespanel6.Name = "todayssalespanel6";
+            todayssalespanel6.Size = new Size(214, 77);
+            todayssalespanel6.TabIndex = 3;
+     
+            label11.AutoSize = true;
+            label11.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(0, 1);
+            label11.Name = "label11";
+            label11.Size = new Size(93, 16);
+            label11.TabIndex = 0;
+            label11.Text = "Today's sales";
+    
+            todaysrevenuepanel7.BackColor = Color.Olive;
+            todaysrevenuepanel7.Controls.Add(label7);
+            todaysrevenuepanel7.Location = new Point(3, 86);
+            todaysrevenuepanel7.Name = "todaysrevenuepanel7";
+            todaysrevenuepanel7.Size = new Size(214, 77);
+            todaysrevenuepanel7.TabIndex = 4;
+     
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(3, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(112, 16);
+            label7.TabIndex = 0;
+            label7.Text = "Today's revenue";
+   
+            totalrevenuepanel8.BackColor = Color.FromArgb(192, 0, 192);
+            totalrevenuepanel8.Controls.Add(label12);
+            totalrevenuepanel8.Controls.Add(label8);
+            totalrevenuepanel8.Location = new Point(223, 86);
+            totalrevenuepanel8.Name = "totalrevenuepanel8";
+            totalrevenuepanel8.Size = new Size(214, 77);
+            totalrevenuepanel8.TabIndex = 5;
+     
+            label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.ActiveCaptionText;
+            label12.Location = new Point(3, 9);
+            label12.Name = "label12";
+            label12.Size = new Size(94, 16);
+            label12.TabIndex = 1;
+            label12.Text = "Total revenue";
+     
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(62, 47);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 16);
+            label8.TabIndex = 0;
+  
+            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1432, 700);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(lablowstockalerts3);
+            Controls.Add(labelrecentsales2);
+            Controls.Add(recentsales2);
+            Controls.Add(LowStockalert1);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            Text = "Form1";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)LowStockalert1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)recentsales2).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            productsPanel2.ResumeLayout(false);
+            productsPanel2.PerformLayout();
+            sizecolorpanel3.ResumeLayout(false);
+            sizecolorpanel3.PerformLayout();
+            unitsinstockpanel4.ResumeLayout(false);
+            unitsinstockpanel4.PerformLayout();
+            lowstockitemspanel5.ResumeLayout(false);
+            lowstockitemspanel5.PerformLayout();
+            todayssalespanel6.ResumeLayout(false);
+            todayssalespanel6.PerformLayout();
+            todaysrevenuepanel7.ResumeLayout(false);
+            todaysrevenuepanel7.PerformLayout();
+            totalrevenuepanel8.ResumeLayout(false);
+            totalrevenuepanel8.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Panel pnlSidebar;
-        private Button btnDashboard;
-        private Button btnProducts;
-        private Button btnSizesColors;
-        private Button btnInventory;
-        private Button btnReports;
-        private Button btnSales;
-        private Panel pnlMain;
-        private Panel pnlHeader;
-        private Label lblWelcome;
-        private Button btnSignOut;
-        private FlowLayoutPanel flpCards;
-        private Panel pnlCardProducts;
-        private Label lblProductsTitle;
-        private Label lblProductsValue;
-        private Panel pnlCardVariants;
-        private Label lblVariantsTitle;
-        private Label lblVariantsValue;
-        private Panel pnlCardUnits;
-        private Label lblUnitsTitle;
-        private Label lblUnitsValue;
-        private Panel pnlCardLowStock;
-        private Label lblLowStockItemsTitle;
-        private Label lblLowStockItemsValue;
-        private Panel pnlCardTodaySales;
-        private Label lblTodaySalesTitle;
-        private Label lblTodaySalesValue;
-        private Panel pnlCardTodayRevenue;
-        private Label lblTodayRevenueTitle;
-        private Label lblTodayRevenueValue;
-        private Panel pnlCardTotalRevenue;
-        private Label lblTotalRevenueTitle;
-        private Label lblTotalRevenueValue;
-        private Label lblRecentSales;
-        private DataGridView dgvRecentSales;
-        private DataGridViewTextBoxColumn colRsId;
-        private DataGridViewTextBoxColumn colRsDate;
-        private DataGridViewTextBoxColumn colRsCashier;
-        private DataGridViewTextBoxColumn colRsDiscount;
-        private DataGridViewTextBoxColumn colRsTotal;
-        private Label lblLowStock;
-        private DataGridView dgvLowStock;
-        private DataGridViewTextBoxColumn colLsProduct;
-        private DataGridViewTextBoxColumn colLsSize;
-        private DataGridViewTextBoxColumn colLsColor;
-        private DataGridViewTextBoxColumn colLsQuantity;
-        private DataGridViewTextBoxColumn colLsReorderLevel;
+        private Panel panel1;
+        private Panel panel2;
+        private Button ManagementSales6;
+        private Button ManagementReports5;
+        private Button Inventory4;
+        private Button ManagementSizesColors3;
+        private Button Products2;
+        private Button Dashboard1;
+        private ImageList imageList1;
+        private Label labelwelcometoclothing1;
+        private Button SignOut7;
+        private DataGridView LowStockalert1;
+        private DataGridView recentsales2;
+        private Label labelrecentsales2;
+        private Label lablowstockalerts3;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel productsPanel2;
+        private Panel sizecolorpanel3;
+        private Panel unitsinstockpanel4;
+        private Panel lowstockitemspanel5;
+        private Panel todayssalespanel6;
+        private Panel todaysrevenuepanel7;
+        private Panel totalrevenuepanel8;
+        private DataGridViewTextBoxColumn colID;
+        private DataGridViewTextBoxColumn colDate;
+        private DataGridViewTextBoxColumn colCashier;
+        private DataGridViewTextBoxColumn colDiscount;
+        private DataGridViewTextBoxColumn colTotal;
+        private DataGridViewTextBoxColumn colProduct;
+        private DataGridViewTextBoxColumn colSize;
+        private DataGridViewTextBoxColumn colColor;
+        private DataGridViewTextBoxColumn colQuantity;
+        private DataGridViewTextBoxColumn colReorderLevel;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }
